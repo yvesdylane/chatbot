@@ -1,0 +1,2 @@
+model_checkpoint_path: "A:\\fosai\\model.tflearn"
+all_model_checkpoint_paths: "A:\\fosai\\model.tflearn"

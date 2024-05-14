@@ -1,0 +1,939 @@
+{"intents": [
+    {"tag": "greetings",
+    "patterns": ["hello","hey","hi","good day","Greetings","what's up?","how is it going?","goodmorning"],
+    "responses": ["Hello!","Hey!","What can I do for you?","goodmorning"]
+    },
+    {
+        "tag":"creation",
+        "patterns":["who created you","your creation","who made you"],
+        "responses":["I was created by software engineering students of YIBS under the supervision of their project coordinator ,a lecturer of that institution during a program called the YIBS TECH GROOVE. you can see them for more info"]
+    },
+  
+    {"tag": "name",
+    "patterns": ["what is your name","name","what's your name","who are you","what should I call you"],
+    "responses": ["I am FoSAI your facilitator","I'm  FoSAI","I'm  FoSAI your virtual assistant"]
+    },
+  
+    {"tag": "courses",
+    "patterns": ["what courses are available", "how many courses are there in this college"],
+    "responses": ["There are many courses available in our institution all depending on the departmant and program you are signing up for so contact us fro more info or visit our website"]
+    },
+    {
+        "tag": "time_off",
+        "patterns": ["How can I make the most of my time off?", "What are some ways to relax and recharge?", "How can I avoid burnout?"],
+        "responses": ["To make the most of your time off, try disconnecting from work or technology, engaging in activities that bring you joy or relaxation, and spending time with loved ones. Ways to relax and recharge include practicing mindfulness or meditation, getting regular exercise or outdoor time, and doing creative or leisure activities. To avoid burnout, try setting boundaries between work and personal time, taking breaks when needed, and seeking support or guidance from a supervisor or mental health professional."]
+    },
+    {
+        "tag": "volunteering",
+        "patterns": ["How can I get involved in volunteering?", "What are some benefits of volunteering?", "How can I find meaningful volunteer opportunities?"],
+        "responses": ["To get involved in volunteering, try identifying causes or organizations that align with your interests or values, reaching out to local nonprofits or community groups, and seeking out volunteer opportunities through online resources or word of mouth. Benefits of volunteering include building new skills and connections, making a positive impact on your community, and gaining a sense of fulfillment or purpose. Ways to find meaningful volunteer opportunities include considering your personal strengths and interests, seeking out opportunities that challenge or inspire you, and reflecting on the impact you want to make."]
+    },
+    {
+        "tag": "investing",
+        "patterns": ["How can I start investing?", "What are some types of investments?", "How can I manage investment risk?"],
+        "responses": ["To start investing, try setting financial goals, researching different types of investments, and seeking guidance from a financial advisor or online resources. Types of investments include stocks, bonds, mutual funds, and real estate. To manage investment risk, try diversifying your portfolio (investing in different types of assets), monitoring your investments regularly, and being patient (avoiding impulsive decisions based on short-term market fluctuations)."]
+    },
+    {
+        "tag": "entrepreneurship",
+        "patterns": ["How can I become an entrepreneur?", "What are some tips for starting a business?", "How can I finance a startup?"],
+        "responses": ["To become an entrepreneur, try identifying a need or opportunity in the market, developing a business plan, and seeking out resources such as mentors or incubators. Tips for starting a business include conducting market research, testing your product or service with potential customers, and building a strong team. Ways to finance a startup include using personal savings, seeking out loans or grants, and pitching to investors or venture capitalists."]
+    },
+    {
+        "tag": "leadership",
+        "patterns": ["How can I become a better leader?", "What are some qualities of effective leaders?", "How can I motivate my team?"],
+        "responses": ["To become a better leader, try developing your communication and interpersonal skills, seeking feedback from others, and leading by example. Qualities of effective leaders include integrity, empathy, vision, and the ability to inspire and motivate others. Ways to motivate your team include setting clear goals and expectations, recognizing and rewarding good work, and providing opportunities for growth and development."]
+    },
+    {
+        "tag": "public_speaking",
+        "patterns": ["How can I improve my public speaking skills?", "What are some tips for giving a good presentation?", "How can I overcome stage fright?"],
+        "responses": ["To improve your public speaking skills, try practicing regularly, using visual aids or props, and seeking feedback from others. Tips for giving a good presentation include starting with a strong opening, organizing your content clearly, and engaging your audience through storytelling or humor. To overcome stage fright, try practicing relaxation techniques such as deep breathing or visualization, preparing thoroughly, and focusing on the message you want to convey."]
+    },
+    {
+        "tag": "interpersonal_skills",
+        "patterns": ["How can I improve my interpersonal skills?", "What are some tips for effective communication?", "How can I resolve conflicts in a professional setting?"],
+        "responses": ["To improve your interpersonal skills, try practicing active listening, being empathetic and respectful, and seeking feedback from others. Tips for effective communication include being clear and concise, using nonverbal cues effectively, and adapting your communication style to different situations or audiences. To resolve conflicts in a professional setting, try identifying the root cause of the conflict, finding common ground, and seeking mediation or support from a supervisor or HR representative when needed."]
+    },
+    {
+        "tag": "diversity_and_inclusion",
+        "patterns": ["How can I promote diversity and inclusion?", "What are some ways to be more inclusive?", "How can I address unconscious bias?"],
+        "responses": ["To promote diversity and inclusion, try educating yourself about different cultures and perspectives, being open-minded and respectful, and advocating for underrepresented groups. Ways to be more inclusive include using inclusive language, creating a welcoming and accessible environment, and actively seeking out diverse perspectives and opinions. To address unconscious bias, try acknowledging and challenging your own biases, seeking out diverse perspectives and experiences, and advocating for policies or practices that promote equity and inclusion."]
+    },
+    {
+        "tag": "study_tips",
+        "patterns": ["What are some effective study tips?", "How can I improve my study habits?", "What are some ways to stay focused while studying?"],
+        "responses": ["Effective study tips include breaking up study sessions into manageable chunks, creating a designated study space, using active learning techniques such as note-taking and summarizing, and taking breaks to avoid burnout. To improve your study habits, try setting goals, prioritizing tasks, and seeking help from teachers or tutors when needed. Ways to stay focused while studying include minimizing distractions, using a timer to stay on task, and practicing mindfulness."]
+    },
+    {
+        "tag": "test_prep",
+        "patterns": ["How can I prepare for a test?", "What are some effective test-taking strategies?", "How can I reduce test anxiety?"],
+        "responses": ["To prepare for a test, try reviewing notes and materials regularly, creating practice quizzes or flashcards, and seeking help from teachers or tutors when needed. Effective test-taking strategies include reading directions carefully, budgeting time wisely, and answering easier questions first. To reduce test anxiety, try practicing relaxation techniques such as deep breathing or visualization, getting enough sleep and exercise, and reframing negative thoughts."]
+    },
+    {
+        "tag": "time_management",
+        "patterns": ["How can I manage my time better?", "What are some time management techniques?", "How can I avoid procrastination?"],
+        "responses": ["To manage your time better, try creating a schedule or to-do list, prioritizing tasks, and breaking up larger tasks into smaller ones. Time management techniques include the Pomodoro method (working in 25-minute increments with breaks in between), the Eisenhower matrix (categorizing tasks based on urgency and importance), and the Pareto principle (focusing on the 20% of tasks that yield 80% of results). To avoid procrastination, try setting deadlines for yourself, breaking tasks into smaller parts, and rewarding yourself for completing tasks."]
+    },
+    {
+        "tag": "note_taking",
+        "patterns": ["How can I take better notes?", "What are some effective note-taking techniques?", "How can I organize my notes?"],
+        "responses": ["To take better notes, try actively listening during lectures or readings, using abbreviations or symbols to save time, and summarizing information in your own words. Effective note-taking techniques include the Cornell method (dividing notes into columns for main ideas and details), mind mapping (creating a visual representation of information), and outlining. To organize your notes, try using color-coding, creating a digital or physical filing system, and reviewing and revising your notes regularly."]
+    },
+    {
+        "tag": "online_learning",
+        "patterns": ["How can I succeed in online learning?", "What are some tips for online classes?", "How can I stay motivated while learning online?"],
+        "responses": ["To succeed in online learning, try establishing a routine or schedule, setting goals, and staying organized. Tips for online classes include participating in discussions, communicating with teachers or classmates when needed, and taking advantage of resources such as online tutorials or study groups. To stay motivated while learning online, try setting rewards for completing tasks, taking breaks to avoid burnout, and reminding yourself of your goals."]
+    },
+    {
+        "tag": "group_work",
+        "patterns": ["How can I work effectively in a group?", "What are some tips for group projects?", "How can I resolve conflicts in a group setting?"],
+        "responses": ["To work effectively in a group, try establishing clear roles and responsibilities, communicating openly and respectfully, and setting deadlines or milestones. Tips for group projects include dividing tasks based on strengths and interests, using technology to collaborate remotely, and providing constructive feedback to group members. To resolve conflicts in a group setting, try listening actively to all perspectives, finding common ground, and seeking mediation or support from a teacher or supervisor when needed."]
+    },
+    {
+        "tag": "critical_thinking",
+        "patterns": ["How can I improve my critical thinking skills?", "What are some ways to think more critically?", "How can I evaluate sources critically?"],
+        "responses": ["To improve your critical thinking skills, try analyzing and questioning assumptions, considering multiple perspectives, and evaluating evidence or arguments. Ways to think more critically include asking open-ended questions, seeking out diverse viewpoints, and avoiding logical fallacies. To evaluate sources critically, try checking for accuracy and credibility, looking for bias or hidden agendas, and cross-referencing information with other sources."]
+    },
+    {
+        "tag": "academic_writing",
+        "patterns": ["How can I improve my academic writing?", "What are some tips for writing essays?", "How can I avoid plagiarism?"],
+        "responses": ["To improve your academic writing, try organizing your ideas clearly, using evidence to support your arguments, and revising and editing your work thoroughly. Tips for writing essays include creating an outline or structure, using formal language and tone, and citing sources properly. To avoid plagiarism, try paraphrasing information in your own words, citing sources accurately, and using plagiarism detection software if available."]
+    },
+    {
+        "tag": "research_skills",
+        "patterns": ["How can I improve my research skills?", "What are some tips for conducting research?", "How can I evaluate sources for research?"],
+        "responses": ["To improve your research skills, try identifying relevant keywords or search terms, using advanced search techniques, and keeping track of sources and notes. Tips for conducting research include using a variety of sources (such as books, articles, and databases), evaluating sources for relevance and credibility, and citing sources properly. To evaluate sources for research, try checking for bias or conflicts of interest, looking for peer-reviewed sources, and considering the context in which the information was produced."]
+    },
+    {
+        "tag": "career_planning",
+        "patterns": ["How can I plan my career?", "What are some tips for career planning?", "How can I explore different career options?"],
+        "responses": ["To plan your career, try identifying your skills and interests, setting goals, and researching different career paths. Tips for career planning include networking with professionals in your field of interest, gaining relevant experience through internships or volunteer work, and seeking guidance from a career counselor or mentor. Ways to explore different career options include taking career assessments, attending job fairs or informational interviews, and researching different industries or job roles."]
+    },
+    {
+        "tag": "job_search",
+        "patterns": ["How can I search for a job?", "What are some job search strategies?", "How can I prepare for a job interview?"],
+        "responses": ["To search for a job, try using online job boards or company websites, networking with professionals in your field, and seeking out job fairs or recruiting events. Job search strategies include tailoring your resume and cover letter to each job application, preparing for common interview questions, and following up with employers after an interview. To prepare for a job interview, try researching the company and position, practicing answering common interview questions, and dressing professionally."]
+    },
+    {
+        "tag": "financial_planning",
+        "patterns": ["How can I improve my financial planning?", "What are some tips for budgeting?", "How can I save money?"],
+        "responses": ["To improve your financial planning, try creating a budget or financial plan, tracking your expenses, and setting financial goals. Tips for budgeting include prioritizing essential expenses (such as rent and bills), avoiding unnecessary expenses (such as eating out or buying expensive clothing), and saving for emergencies or unexpected expenses. Ways to save money include using coupons or discount codes, buying items in bulk, and negotiating bills or contracts."]
+    },
+    {
+        "tag": "investing",
+        "patterns": ["How can I start investing?", "What are some types of investments?", "How can I manage investment risk?"],
+        "responses": ["To start investing, try setting financial goals, researching different types of investments, and seeking guidance from a financial advisor or online resources. Types of investments include stocks, bonds, mutual funds, and real estate. To manage investment risk, try diversifying your portfolio (investing in different types of assets), monitoring your investments regularly, and being patient (avoiding impulsive decisions based on short-term market fluctuations)."]
+    },
+    {
+        "tag": "entrepreneurship",
+        "patterns": ["How can I become an entrepreneur?", "What are some tips for starting a business?", "How can I finance a startup?"],
+        "responses": ["To become an entrepreneur, try identifying a need or opportunity in the market, developing a business plan, and seeking out resources such as mentors or incubators. Tips for starting a business include conducting market research, testing your product or service with potential customers, and building a strong team. Ways to finance a startup include using personal savings, seeking out loans or grants, and pitching to investors or venture capitalists."]
+    },
+    {
+        "tag": "leadership",
+        "patterns": ["How can I become a better leader?", "What are some qualities of effective leaders?", "How can I motivate my team?"],
+        "responses": ["To become a better leader, try developing your communication and interpersonal skills, seeking feedback from others, and leading by example. Qualities of effective leaders include integrity, empathy, vision, and the ability to inspire and motivate others. Ways to motivate your team include setting clear goals and expectations, recognizing and rewarding good work, and providing opportunities for growth and development."]
+    },
+    {
+        "tag": "public_speaking",
+        "patterns": ["How can I improve my public speaking skills?", "What are some tips for giving a good presentation?", "How can I overcome stage fright?"],
+        "responses": ["To improve your public speaking skills, try practicing regularly, using visual aids or props, and seeking feedback from others. Tips for giving a good presentation include starting with a strong opening, organizing your content clearly, and engaging your audience through storytelling or humor. To overcome stage fright, try practicing relaxation techniques such as deep breathing or visualization, preparing thoroughly, and focusing on the message you want to convey."]
+    },
+    {
+        "tag": "interpersonal_skills",
+        "patterns": ["How can I improve my interpersonal skills?", "What are some tips for effective communication?", "How can I resolve conflicts in a professional setting?"],
+        "responses": ["To improve your interpersonal skills, try practicing active listening, being empathetic and respectful, and seeking feedback from others. Tips for effective communication include being clear and concise, using nonverbal cues effectively, and adapting your communication style to different situations or audiences. To resolve conflicts in a professional setting, try identifying the root cause of the conflict, finding common ground, and seeking mediation or support from a supervisor or HR representative when needed."]
+    },
+    {
+        "tag": "diversity_and_inclusion",
+        "patterns": ["How can I promote diversity and inclusion?", "What are some ways to be more inclusive?", "How can I address unconscious bias?"],
+        "responses": ["To promote diversity and inclusion, try educating yourself about different cultures and perspectives, being open-minded and respectful, and advocating for underrepresented groups. Ways to be more inclusive include using inclusive language, creating a welcoming and accessible environment, and actively seeking out diverse perspectives and opinions. To address unconscious bias, try acknowledging and challenging your own biases, seeking out diverse perspectives and experiences, and advocating for policies or practices that promote equity and inclusion."]
+    },
+  
+     {"tag": "courseDuration",
+    "patterns": ["how long will be BIT or BBA course", "how long will it take to complete BIT or BBA course"],
+    "responses": ["Our college offers 3 year long BIT course and 3 and half year long BBA course."]
+    },
+  
+     {"tag": "Location",
+    "patterns": ["location","where is it located","what is the location of the college"],
+    "responses": ["Our institution has 2 campuses located at carrefour simbok and crrefour simbock montee chapel"]
+    },
+  
+    {"tag": "semesters",
+    "patterns": ["how many semesters are there in a year","how many semesters one should study in a year"],
+    "responses": ["There are two semesters in a year."]
+    },
+  
+    {"tag": "semDuration",
+    "patterns": ["how many months are there in a semester","how long will be a single semester"],
+    "responses": ["The single semester will be around 4 months."]
+    },
+  
+    {"tag": "studentRequirements",
+    "patterns": ["what are the student requirements for admission","entry requirements","admission requirements"],
+    "responses": ["Academic Level\nNEB +2 overall aggregate of 2.2 CGPA (55%) or above with each subject (theory and practical) grade D+ or above, and SEE Mathematics score of C+ ( 50%) or above.\nFor A-Levels, a minimum of 3.5 credits and atleast a grade of D and above.\n\nEnglish Proficiency\nEnglish NEB XII Marks greater or equals to 60% or 2.4 GPA\nFor Level 4 or Year 1 BIT\nPass in General Paper or English Language or IELTS 5.5 or PTE 47/ Meeting UCAS Tariff points of 80.\nFor Level 4 or Year 1 BBA\nPass in General Paper or English Language or IELTS 5.5 or PTE 47/ Meeting UCAS Tariff points of 96."]
+    },
+  
+    {"tag": "classes",
+    "patterns": ["how many classes will be there in a day","how long are the classes?"],
+    "responses": ["There may be two or three classes per day. Each class will be of 1 hour and 30 minutes."]
+    },
+    {
+        "tag":"contact",
+        "patterns":["How can i contact the administration","website","contact","more info"],
+        "responses":["you can visit our website at or contact the administration at  "]
+    },
+  
+    {"tag": "teachingStyle",
+    "patterns": ["what is the teaching style of this college?","Is the teaching pattern different from other college?","what is the teaching format?"],
+    "responses": ["Our college has different teaching patterns than other colleges of Nepal. We adopt a British teaching methodology, following the LTW techniques which stands for Lecture, Tutorial and Workshop.\nYou can provide us with your contact details and our counselors shall reach out to you and provide you with further details."]
+    },
+  
+    {"tag": "exams",
+    "patterns": ["what are the exams like?","What is the exam pattern"],
+    "responses": ["There are assignments which carry more weight than your written exams. The assignments have deadlines which you should not exceed if you want to get better marks."]
+    },
+  
+    {"tag": "hours",
+    "patterns": ["what are your hours","when are you guys open","what your hours of operation"],
+    "responses": ["You can message us here at any hours. But our college premises will be open from 7:00 am to 5:00 pm only."]
+    },
+  
+    {"tag": "funActivities",
+    "patterns": ["will there be any extra curriculum activities?","does the college conducts any fun program"],
+    "responses": ["Yes, Of course. Our college not only provides excellent education but also encourage students to take part in different curriculum activities. The college conducts yearly programs like Sports meet, Carnival, Holi festival, and Christmas. \n Also our college has basketball court, badminton court, table tennis, chess, carrom board and many more refreshment zones."]
+    },
+  
+    {"tag": "facilities",
+    "patterns": ["what facilities are provided by the college?","what are the facilities of college for students", "what are the college infrastructures "],
+    "responses": ["With excellent education facilities, Our College provides various other facilities like 24 hours internet, library, classes with AC, discusson room, canteen, parking space, and student service for any students queries."]
+    },
+  
+    {"tag": "fee",
+    "patterns": ["how much is the college fee","what is the fee structure"],
+    "responses": ["Course BIT\nAdmission fee=RS 96,000\nYear 1\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 69,000 Total fee= RS 334,000\nYear 2\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 69,000 Total fee= RS 238,000\nYear 3\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 69,000 Total fee= RS 238,000\nGrandTotal fee= RS 810,000\n\nCourse BBA\nAdmission fee=RS 96,000\nYear 1\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 52,000 Total fee= RS 300,000\nYear 2\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 52,000 Total fee= RS 204,000\nYear 3\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 52,000 Total fee= RS 204,000\nYear 4\nUniversity and Exam fee= RS 50,000 Semester fee=RS 52,000 Total fee= RS 102,000\nGrandTotal fee= RS 810,000"]
+    },
+  
+    {"tag": "goodbye",
+    "patterns": ["cya","See you later","Goodbye","I am leaving","Have a Good Day","bye","see ya"],
+    "responses": ["Sad to see you go :(","Talk you later","Goodbye"]
+    },
+  
+    {"tag": "invalid",
+      "patterns": ["","gvsd","asbhk"],
+      "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+    },
+  
+    {"tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+        "tag": "admission_requirements",
+        "patterns": ["What are the admission requirements?", "What do I need to apply?", "How can I apply?"],
+        "responses": ["To apply to Yaounde International Business School, you will need to submit an application form, transcripts from previous institutions attended, a statement of purpose, and two letters of recommendation. Additionally, applicants may be required to submit test scores from standardized exams such as the GRE or GMAT. For more information on the specific requirements for each program, please visit our website or contact our admissions office."]
+    },
+    {
+        "tag": "tuition_fees",
+        "patterns": ["What are the tuition fees?", "How much does it cost to attend?", "Is there financial aid available?"],
+        "responses": ["The tuition fees vary depending on the program you are applying for. Please visit our website or contact our admissions office for more information on specific fees and financial aid opportunities."]
+    },
+    {
+        "tag": "program_details",
+        "patterns": ["What courses are offered?", "What is the curriculum like?", "Can you tell me more about the program?"],
+        "responses": ["Our program offers a variety of courses in [insert subject area]. The curriculum is designed to provide students with a comprehensive understanding of [insert subject area] and prepare them for careers in [insert related field]. For more information on specific courses and the program structure, please visit our website or contact our admissions office."]
+    },
+    {
+        "tag": "application_deadline",
+        "patterns": ["When is the application deadline?", "Is there a specific deadline to apply?", "Can I still apply after the deadline?"],
+        "responses": ["The application deadline varies depending on the program you are applying for. Please visit our website or contact our admissions office for more information on specific deadlines and any possible extensions."]
+    },
+    {
+        "tag": "campus_life",
+        "patterns": ["What is campus life like?", "Are there clubs and organizations?", "What facilities are available on campus?"],
+        "responses": ["Our campus offers a vibrant community with a variety of clubs and organizations for students to get involved in. Additionally, we have state-of-the-art facilities including [insert facilities]. For more information on campus life, please visit our website or contact our admissions office."]
+    },
+    
+
+ {
+    "tag": "career_opportunities",
+    "patterns": ["What career opportunities are available?", "What jobs can I get with this degree?", "Is there a career center on campus?"],
+    "responses": ["Our program prepares students for a variety of careers in [insert related field]. We also have a career center on campus that provides resources and support for students seeking employment opportunities. For more information on career opportunities, please visit our website or contact our admissions office."]
+}
+
+, {
+    "tag": "housing_options",
+    "patterns": ["What housing options are available?", "Is on-campus housing available?", "Can you recommend any off-campus housing options?"],
+    "responses": ["We offer on-campus housing options for students, as well as resources for finding off-campus housing. For more information on housing options, please visit our website or contact our admissions office."]
+}
+
+, {
+    "tag": "faculty_information",
+    "patterns": ["Who are the faculty members?", "What is the faculty like?", "Can you tell me more about the professors?"],
+    "responses": ["Our faculty members are experts in their respective fields and are dedicated to providing students with a high-quality education. For more information on our faculty members, please visit our website or contact our admissions office."]
+}
+
+, {
+    "tag": "language_requirements",
+    "patterns": ["Are there any language requirements?", "Do I need to speak a certain language?", "Is there an English proficiency requirement?"],
+    "responses": ["Some programs may have language requirements, including an English proficiency requirement. Please visit our website or contact our admissions office for more information on specific requirements."]
+}
+
+,{
+    "tag": "scholarship_information",
+    "patterns": ["Are there any scholarships available?", "How can I apply for scholarships?", "What are the scholarship criteria?"],
+    "responses": ["We offer a variety of scholarships for students. Please visit our website or contact our admissions office for more information on scholarship opportunities and criteria."]
+}
+
+,{
+    "tag": "class_size",
+    "patterns": ["What is the class size like?", "Are classes large"],
+    "responses": ["Our classes are designed to provide students with individualized attention and support. The class size varies depending on the program, but we strive to maintain a low student-to-faculty ratio. For more information on class size, please visit our website or contact our admissions office."]
+}
+
+, {
+    "tag": "internship_opportunities",
+    "patterns": ["Are there any internship opportunities?", "How can I find an internship?", "What companies offer internships?"],
+    "responses": ["We offer a variety of internship opportunities for students, and our career center provides resources and support for finding internships. For more information on internship opportunities, please visit our website or contact our admissions office."]
+}
+
+, {
+    "tag": "study_abroad",
+    "patterns": ["Are there any study abroad programs?", "Can I study abroad while attending?", "What countries can I study in?"],
+    "responses": ["We offer a variety of study abroad programs for students to enhance their educational experience. Please visit our website or contact our admissions office for more information on study abroad opportunities."]
+}
+
+, {
+    "tag": "research_opportunities",
+    "patterns": ["Are there any research opportunities?", "How can I get involved in research?", "What research areas are available?"],
+    "responses": ["We offer a variety of research opportunities for students to engage in innovative and impactful research. For more information on research opportunities, please visit our website or contact our admissions office."]
+}
+
+,{
+    "tag": "admission_process",
+    "patterns": ["What is the admission process like?", "How long does it take to hear back?", "What documents do I need to submit?"],
+    "responses": ["The admission process varies depending on the program you are applying for. Please visit our website or contact our admissions office for more information on the admission process and required documents."]
+}
+
+, {
+    "tag": "career_services",
+    "patterns": ["Are there any career services available?", "What services does the career center offer?", "Can I get help with my resume?"],
+    "responses": ["Our career center provides a variety of resources and services for students seeking employment opportunities, including resume assistance, job search strategies, and career counseling. For more information on career services, please visit our website or contact our admissions office."]
+}
+
+,{
+    "tag": "academic_support",
+    "patterns": ["Is academic support available?", "What academic resources are available?", "Can I get help with my coursework?"],
+    "responses": ["We offer a variety of academic support services for students, including tutoring, study groups, and academic advising. For more information on academic support, please visit our website or contact our admissions office."]
+}
+
+, {
+    "tag": "application_fee",
+    "patterns": ["Is there an application fee?", "How much is the application fee?", "Can the application fee be waived?"],
+    "responses": ["There may be an application fee depending on the program you are applying for. Please visit our website or contact our admissions office for more information on the application fee and any possible waivers."]
+}
+
+,{
+    "tag": "graduate_programs",
+    "patterns": ["Do you offer any graduate programs?", "What graduate programs are available?", "Can I pursue a master's degree at your school?"],
+    "responses": ["We offer a variety of graduate programs for students seeking advanced degrees in [insert subject area]. For more information on our graduate programs, please visit our website or contact our admissions office."]
+}
+
+, {
+    "tag": "transfer_students",
+    "patterns": ["Do you accept transfer students?", "What is the transfer process like?", "Can I transfer credits from another institution?"],
+    "responses": ["We accept transfer students and have a transfer credit evaluation process. Please visit our website or contact our admissions office for more information"]
+
+
+}
+
+, {
+    "tag": "student_life",
+    "patterns": ["What is student life like?", "Are there any events on campus?", "Can I get involved in student organizations?"],
+    "responses": ["Our campus offers a dynamic and engaging student life, with a variety of events and opportunities for students to get involved in clubs and organizations. For more information on student life, please visit our website or contact our admissions office."]
+
+},
+{
+    "tag": "curriculum_information",
+    "patterns": ["What is the curriculum like?", "What courses are offered?", "Are there any elective courses?"],
+    "responses": ["Our curriculum is designed to provide students with a well-rounded education, including a variety of courses and elective options. For more information on our curriculum and elective courses, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "language_programs",
+    "patterns": ["Are there any language programs?", "What languages are taught?", "Is there an English proficiency requirement?"],
+    "responses": ["We offer a variety of language programs for students, including English as a Second Language (ESL) courses. We also have an English proficiency requirement for non-native English speakers. For more information on language programs and the English proficiency requirement, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "technology_resources",
+    "patterns": ["What technology resources are available?", "Is there a computer lab?", "Can I bring my own device?"],
+    "responses": ["We have a variety of technology resources available for students, including a computer lab and access to Wi-Fi. Students are also welcome to bring their own devices. For more information on technology resources, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "library_services",
+    "patterns": ["What library services are available?", "Is there a librarian?", "Can I check out books?"],
+    "responses": ["We have a librarian on staff and offer a variety of library services for students, including book checkouts and research assistance. For more information on library services, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "transportation_options",
+    "patterns": ["Are there any transportation options?", "Is there a shuttle service?", "Can I walk to school?"],
+    "responses": ["We offer a variety of transportation options for students, including a shuttle service. Students are also welcome to walk to school if they live nearby. For more information on transportation options, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "alumni_network",
+    "patterns": ["Is there an alumni network?", "What benefits do alumni receive?", "How can I get involved in the alumni network?"],
+    "responses": ["We have an active alumni network that provides benefits and resources for graduates of our programs. Alumni are welcome to get involved in the network by attending events and connecting with other alumni. For more information on the alumni network, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "academic_calendar",
+    "patterns": ["What is the academic calendar?", "When does the school year start?", "When are the breaks?"],
+    "responses": ["Our academic calendar varies depending on the program, but typically includes a fall and spring semester with breaks throughout the year. For more information on the academic calendar, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "school_history",
+    "patterns": ["What is the school's history?", "How long has the school been open?", "What are some notable achievements?"],
+    "responses": ["Yaounde International Business School has been providing quality education to students for over [insert number] years. We have a rich history of academic excellence and notable achievements. For more information on our school's history, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "school_policies",
+    "patterns": ["What are the school policies?", "Is there a dress code?", "What is the attendance policy?"],
+    "responses": ["We have a variety of school policies in place, including a dress code and attendance policy. For more information on school policies, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "community_involvement",
+    "patterns": ["Is the school involved in the community?", "Are there any community service opportunities?", "Can I get involved in community events?"],
+    "responses": ["We are committed to being involved in the community and offer a variety of community service opportunities for students. Students are also welcome to get involved in community events. For more information on community involvement, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "campus_security",
+    "patterns": ["Is campus security available?", "What measures are in place to ensure campus safety?", "Is there a campus police department?"],
+    "responses": ["We have campus security measures in place to ensure the safety of our students, including a campus police department. For more information on campus security, please visit our website or contact our admissions office."]
+},
+{
+    "tag":"partnerships",
+    "patterns": ["Does the school have any partnerships?", "What organizations is the school partnered with?", "Are there any joint programs with other schools?"],
+    "responses": ["We have partnerships with a variety of organizations and offer joint programs with other schools. For more information on partnerships and joint programs, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "sports_programs",
+    "patterns": ["Are there any sports programs?", "What sports can I participate in?", "Is there a sports team?"],
+    "responses": ["We offer a variety of sports programs for students, including basketball, soccer, and volleyball. We also have a sports team that competes against other schools. For more information on sports programs, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "health_services",
+    "patterns": ["Are there any health services available?", "Is there a health center?", "Can I get medical attention on campus?"],
+    "responses": ["We have a health center on campus that provides medical attention and resources for students. For more information on health services, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "graduate_programs",
+    "patterns": ["Are there any graduate programs?", "What graduate programs are offered?", "How long does it take to complete a graduate program?"],
+    "responses": ["We offer a variety of graduate programs for students, including MBA and Master's programs. The length of graduate programs varies depending on the program. For more information on graduate programs, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "research_opportunities",
+    "patterns": ["Are there any research opportunities?", "What research topics are available?", "Can I get funding for my research?"],
+    "responses": ["We offer a variety of research opportunities for students, with options to research a variety of topics. Funding may be available for certain research projects. For more information on research opportunities, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "online_courses",
+    "patterns": ["Are there any online courses?", "What online courses are offered?", "Can I complete my degree online?"],
+    "responses": ["We offer a variety of online courses for students, with options to complete certain degrees online. For more information on online courses and degree programs, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "international_students",
+    "patterns": ["Are there any international students?", "How many international students are enrolled?", "Is there support for international students?"],
+    "responses": ["We have a diverse student body with a significant number of international students enrolled. We also offer support and resources for international students. For more information on support for international students, please visit our website or contact our admissions office."]
+},
+{
+    "tag": "jokes",
+    "patterns": ["Tell me a joke", "Do you know any good jokes?", "Make me laugh"],
+    "responses": ["Why did the tomato turn red? Because it saw the salad dressing!",
+                  "Why don't scientists trust atoms? Because they make up everything!",
+                  "What did the grape say when it got stepped on all day? Nothing, it just let out a little wine!",
+                  "Why did the math book look so sad? Because it had too many problems.",
+                  "Why did the chicken cross the playground? To get to the other slide!",
+                  "Why did the cookie go to the doctor? Because it felt crummy!",
+                  "Why did the scarecrow win an award? Because he was outstanding in his field!",
+                  "Why couldn't the bicycle stand up by itself? Because it was two-tired!",
+                  "What do you call a fake noodle? An impasta!",
+                  "Why do seagulls fly over the sea? Because if they flew over the bay, they'd be bagels!",
+                  "Why did the coffee file a police report? It got mugged!",
+                  "Why did the banana go to the doctor? Because it wasn't peeling well!",
+                  "Why don't oysters give to charity? Because they're shellfish!",
+                  "What do you call a bear with no teeth? A gummy bear!",
+                  "Why did the belt go to jail? For holding up pants!",
+                  "Why do cows wear bells? Because their horns don't work!",
+                  "Why was the math book sad? Because it had too many problems.",
+                  "What do you call a fish wearing a bowtie? Sofishticated!",
+                  "What do you call a lazy kangaroo? A pouch potato!",
+                  "What do you call a bear with no ears? B!",
+                  "Why did the tomato turn to the other tomato and say, 'You go ahead, I'll ketchup!'",
+                  "What do you call a group of cows playing instruments? A moo-sical band!",
+                  "Why did the golfer wear two pairs of pants? In case he got a hole in one!",
+                  "Why don't ants get sick? Because they have tiny ant-bodies!",
+                  "What do you call an alligator in a vest? An investigator!",
+                  "Why did the frog call his insurance company? He had a jump in his car!",
+                  "What do you call a snowman with a six-pack? An abdominal snowman!",
+                  "Why couldn't the bicycle stand up by itself? Because it was two-tired!",
+                  "What do you call a fake noodle? An impasta!",
+                  "Why did the scarecrow win an award? Because he was outstanding in his field!"]
+},
+{
+    "tag": "food_delivery",
+    "patterns": ["Can I order food delivery?", "How do I order food online?", "Is there a food delivery service available?"],
+    "responses": ["Yes, you can order food delivery from many restaurants through various online platforms such as Uber Eats, DoorDash, Grubhub, and more. Simply download the app or visit the website to place your order and enjoy your meal from the comfort of your home."]
+},
+{
+    "tag": "movie_ticket",
+    "patterns": ["How do I book a movie ticket?", "Is there a movie theater nearby?", "What movies are currently playing?"],
+    "responses": ["You can book a movie ticket online through various platforms such as Fandango, AMC Theatres, Regal Cinemas, and more. You can also check for nearby movie theaters and showtimes on these websites. For information on current movies playing, please visit the website of your preferred movie theater."]
+},
+{
+    "tag": "weather_forecast",
+    "patterns": ["What is the weather forecast for today?", "Will it rain later?", "How cold will it be tomorrow?"],
+    "responses": ["To check the weather forecast, you can use various websites and apps such as AccuWeather, The Weather Channel, or your local news station. Simply enter your location and you will receive information on temperature, precipitation, and other weather conditions for the day or week ahead."]
+},
+{
+    "tag": "set_alarm",
+    "patterns": ["How do I set an alarm?", "Can I set multiple alarms?", "What time should I wake up?"],
+    "responses": ["You can set an alarm on your phone or other electronic device by accessing the clock or alarm app. You can set multiple alarms for different times and days of the week. The time you choose to wake up is up to you and your personal schedule."]
+},
+{
+    "tag": "play_music",
+    "patterns": ["How do I play music?", "What music streaming services are available?", "Can I create playlists?"],
+    "responses": ["You can play music on various streaming services such as Spotify, Apple Music, Pandora, and more. Simply download the app or visit the website to access millions of songs and create your own playlists. You can also use your phone or other electronic device to play music stored locally."]
+},
+{
+    "tag": "call_friend",
+    "patterns": ["How do I call a friend?", "What is their phone number?", "Can I call them now?"],
+    "responses": ["To call a friend, you can use your phone or other electronic device and dial their phone number. If you do not have their number, you can ask for it directly or search for it in your contacts list or social media platform. If they are available to talk, you can call them now."]
+},
+{
+    "tag": "find_restaurant",
+    "patterns": ["Is there a nearby restaurant?", "What type of food do they serve?", "Can I make a reservation?"],
+    "responses": ["To find a nearby restaurant, you can use various apps and websites such as Yelp, OpenTable, or Google Maps. These platforms provide information on restaurant locations, menus, reviews, and more. You can also make a reservation through these platforms or by contacting the restaurant directly."]
+},
+{
+    "tag": "book_hotel",
+    "patterns": ["How do I book a hotel room?", "What amenities do they offer?", "Is there a discount available?"],
+    "responses": ["You can book a hotel room online through various platforms such as Expedia, Booking.com, Hotels.com, and more. These platforms provide information on hotel locations, room types, amenities, and reviews. You can also check for available discounts and promotions on these websites."]
+},
+{
+    "tag": "flight_schedule",
+    "patterns": ["What is the flight schedule?", "What airlines fly to my destination?", "Can I book a flight online?"],
+    "responses": ["To check the flight schedule, you can use various websites and apps such as Expedia, Kayak, or the airline's website. These platforms provide information on flight times, prices, and availability. You can also book a flight online through these platforms or by contacting the airline directly."]
+},
+{
+    "tag": "recipe_cooking",
+    "patterns": ["What is a good recipe for cooking?", "How do I cook a specific dish?", "Can I find recipes for special diets?"],
+    "responses": ["To find a recipe for cooking, you can use various websites and apps such as Allrecipes, Epicurious, or Food Network. These platforms provide information on ingredients, cooking instructions, and ratings from other users. You can also search for recipes that fit your dietary preferences or restrictions."]
+},
+{
+    "tag": "job_opening",
+    "patterns": ["Is there a job opening?", "What positions are available?", "How do I apply for a job?"],
+    "responses": ["To find a job opening, you can use various job search websites and apps such as Indeed, Glassdoor, or LinkedIn. These platforms provide information on job titles, descriptions, requirements, and salaries. You can also apply for a job online through these platforms or by contacting the employer directly."]
+},
+{
+    "tag": "buy_clothes",
+    "patterns": ["How do I buy clothes online?", "What clothing brands are available?", "Can I return or exchange items?"],
+    "responses": ["You can buy clothes online through various websites and apps such as Amazon, Nordstrom, or Zara. These platforms provide information on clothing styles, sizes, prices, and reviews from other users. You can also check for available discounts and promotions. Most online retailers offer a return or exchange policy."]
+},
+{
+    "tag": "local_event",
+    "patterns": ["Is there a local event or concert?", "What is the event schedule?", "Can I buy tickets online?"],
+    "responses": ["To find a local event or concert, you can use various websites and apps such as Eventbrite, Ticketmaster, or StubHub. These platforms provide information on event locations, schedules, performers, and ticket prices. You can also buy tickets online through these platforms or by contacting the event organizer directly."]
+},
+{
+    "tag": "vacation_itinerary",
+    "patterns": ["How do I plan a vacation itinerary?", "What are some popular tourist attractions?", "Can I book a tour?"],
+    "responses": ["To plan a vacation itinerary, you can use various travel planning websites and apps such as TripAdvisor, Expedia, or Lonely Planet. These platforms provide information on destination locations, hotels, restaurants, activities, and reviews from other travelers. You can also book a tour or activity through these platforms or by contacting the tour operator directly."]
+},
+{
+    "tag": "sports_scores",
+    "patterns": ["What are the latest sports scores?", "What teams are playing today?", "Can I watch a game online?"],
+    "responses": ["To check sports scores and updates, you can use various websites and apps such as ESPN, CBS Sports, or Yahoo Sports. These platforms provide information on team standings, game schedules, scores, and news. You can also watch a game online through various streaming services such as ESPN+, NBC Sports, or CBS All Access."]
+},
+{
+    "tag": "pet_store",
+    "patterns": ["Is there a pet store nearby?", "What pet supplies do they offer?", "Can I adopt a pet?"],
+    "responses": ["To find a pet store near you, you can use various websites and apps such as Petco, PetSmart, or Yelp. These platforms provide information on store locations, products, and services. You can also adopt a pet from a local animal shelter or rescue organization."]
+},
+{
+    "tag": "doctor_appointment",
+    "patterns": ["How do I schedule a doctor's appointment?", "What type of doctor do I need to see?", "Can I request a telemedicine appointment?"],
+    "responses": ["To schedule a doctor's appointment, you can contact your primary care physician or use various healthcare provider websites and apps such as ZocDoc, WebMD, or Healthgrades. These platforms provide information on doctor specialties, locations, availability, and ratings from other patients. You can also request a telemedicine appointment if available."]
+},
+{
+    "tag": "car_rental",
+    "patterns": ["How do I find a car rental service?", "What types of cars are available?", "Can I rent a car online?"],
+    "responses": ["You can find a car rental service online through various websites and apps such as Hertz, Enterprise, or Expedia. These platforms provide information on car types, prices, availability, and rental locations. You can also rent a car online through these platforms or by contacting the rental company directly."]
+},
+{
+    "tag": "groceries_delivery",
+    "patterns": ["How do I order groceries online?", "What grocery stores offer delivery?", "Can I schedule a recurring delivery?"],
+    "responses": ["You can order groceries online through various grocery delivery services such as Instacart, Amazon Fresh, or Walmart Grocery. These platforms provide information on product availability, prices, delivery options, and ratings from other users. You can also schedule a recurring delivery for your convenience."]
+},
+{
+    "tag": "gas_station",
+    "patterns": ["Is there a nearby gas station?", "What is the gas price?", "Can I pay with a credit card?"],
+    "responses": ["To find a nearby gas station, you can use various apps and websites such as GasBuddy, Waze, or Google Maps. These platforms provide information on gas prices, station locations, and ratings from other users. You can also pay with a credit card at most gas stations."]
+},
+{
+    "tag": "theme_park",
+    "patterns": ["How do I buy tickets to a theme park or attraction?", "What rides and attractions are available?", "Can I make a reservation?"],
+    "responses": ["You can buy tickets to a theme park or attraction online through various platforms such as Disney World, Universal Studios, or Six Flags. These platforms provide information on park locations, hours, rides, and prices. You can also make a reservation or purchase a fast pass for shorter wait times."]
+},
+{
+    "tag": "spa_appointment",
+    "patterns": ["How do I book a spa appointment?", "What services are available?", "Can I request a specific therapist?"],
+    "responses": ["You can book a spa appointment online through various spa booking websites and apps such as Spafinder, MassageBook, or Mindbody. These platforms provide information on spa locations, services, availability, and ratings from other users. You can also request a specific therapist if available."]
+},
+{
+    "tag": "mechanic_car",
+    "patterns": ["How do I find a mechanic for my car?", "What types of repairs do they offer?", "Can I get a quote beforehand?"],
+    "responses": ["To find a mechanic for your car, you can use various websites and apps such as Yelp, Angie's List, or RepairPal. These platforms provide information on mechanic locations, services, availability, and ratings from other users. You can also get a quote beforehand to compare prices."]
+},
+{
+    "tag": "park_hiking",
+    "patterns": ["Is there a nearby park or hiking trail for outdoor activities?", "What activities are available?", "Can I bring my pet?"],
+    "responses": ["To find a nearby park or hiking trail for outdoor activities, you can use various websites and apps such as AllTrails, REI, or Yelp. These platforms provide information on park locations, trails, activities, and ratings from other users. You can also bring your pet to most parks and trails."]
+},
+{
+    "tag": "customized_merchandise",
+    "patterns": ["How do I order customized merchandise with my own design or logo?", "What types of merchandise are available?", "Can I get a bulk discount?"],
+    "responses": ["You can order customized merchandise online through various printing and design services such as Custom Ink, Zazzle, or Vistaprint. These platforms provide information on merchandise types, prices, and customization options. You can also get a bulk discount for larger orders."]
+},
+{
+    "tag": "healthy_eating",
+    "patterns": ["What are some healthy food options?", "How can I improve my diet?", "What are some healthy snack ideas?"],
+    "responses": ["Healthy food options include fruits, vegetables, whole grains, lean proteins, and low-fat dairy products. To improve your diet, try incorporating more of these foods and limiting processed and high-fat foods. Healthy snack ideas include nuts, seeds, fruit, and yogurt."]
+},
+{
+    "tag": "exercise_routine",
+    "patterns": ["What is a good exercise routine?", "How often should I exercise?", "What are some at-home workout ideas?"],
+    "responses": ["A good exercise routine includes a mix of cardiovascular exercise, strength training, and flexibility exercises. It is recommended to exercise for at least 30 minutes a day, 5 days a week. At-home workout ideas include bodyweight exercises, yoga, and using resistance bands or dumbbells."]
+},
+{
+    "tag": "mental_health",
+    "patterns": ["How can I improve my mental health?", "What are some ways to reduce stress?", "What are some self-care practices?"],
+    "responses": ["To improve your mental health, try practicing mindfulness, getting regular exercise, getting enough sleep, and seeking support from friends or a mental health professional. Ways to reduce stress include deep breathing, meditation, and engaging in relaxing activities such as reading or taking a bath. Self-care practices include taking time for yourself, doing activities that bring you joy, and practicing gratitude."]
+},
+{
+    "tag": "sleep_quality",
+    "patterns": ["How can I improve my sleep quality?", "What are some natural sleep aids?", "How many hours of sleep do I need?"],
+    "responses": ["To improve your sleep quality, try establishing a consistent sleep schedule, creating a relaxing bedtime routine, avoiding caffeine and electronics before bed, and keeping your bedroom cool and dark. Natural sleep aids include chamomile tea, lavender essential oil, and melatonin supplements. It is recommended to get 7-9 hours of sleep per night."]
+},
+{
+    "tag": "weight_loss",
+    "patterns": ["How can I lose weight?", "What are some healthy weight loss strategies?", "What are some low-calorie meal options?"],
+    "responses": ["To lose weight, try incorporating more fruits, vegetables, and lean proteins into your diet, reducing your portion sizes, and getting regular exercise. Healthy weight loss strategies include setting realistic goals, tracking your progress, and seeking support from friends or a healthcare professional. Low-calorie meal options include salads, grilled chicken or fish, and vegetable stir-fries."]
+},
+{
+    "tag": "allergies",
+    "patterns": ["What are some common allergies?", "How can I manage my allergies?", "Are there any natural remedies for allergies?"],
+    "responses": ["Common allergies include pollen, dust, pet dander, and certain foods. To manage your allergies, try avoiding triggers, taking allergy medications as prescribed by a doctor, and keeping your home clean and free of allergens. Natural remedies for allergies include using a saline nasal rinse, drinking herbal tea with honey, and using essential oils"]
+},
+{
+    "tag": "CameroonHistory",
+    "patterns": ["What is the history of Cameroon?"],
+    "responses": ["Cameroon's history dates back to pre-colonial times, with various kingdoms and societies existing in the region. In the 19th century, European powers began to establish colonies in the area, leading to a period of colonization and eventual independence."]
+},
+{
+    "tag": "CameroonIndependence",
+    "patterns": ["How did Cameroon gain independence from France?"],
+    "responses": ["Cameroon gained independence from France on January 1, 1960, after a period of struggle and negotiation. The country was initially divided into two parts, with the French-administered region gaining independence first."]
+},
+{
+    "tag": "CameroonIndependenceLeaders",
+    "patterns": ["Who were the major leaders during Cameroon's struggle for independence?"],
+    "responses": ["Some of the major leaders during Cameroon's struggle for independence included Ruben Um Nyobe, Ahmadou Ahidjo, and John Ngu Foncha."]
+},
+{
+    "tag": "CameroonSlaveTrade",
+    "patterns": ["What was the role of Cameroon in the transatlantic slave trade?"],
+    "responses": ["Cameroon was one of many African countries that participated in the transatlantic slave trade, with many enslaved individuals being taken from the region and transported to other parts of the world."]
+},
+{
+    "tag": "CameroonCurrentSituation",
+    "patterns": ["How has Cameroon's history shaped its current political and economic situation?"],
+    "responses": ["Cameroon's history has had a significant impact on its current political and economic situation, with factors such as colonialism, ethnic tensions, and resource exploitation shaping the country's development."]
+},
+{
+    "tag": "CameroonColonialPeriod",
+    "patterns": ["What were the major events and conflicts during Cameroon's colonial period?"],
+    "responses": ["Some of the major events and conflicts during Cameroon's colonial period included resistance against European powers, forced labor practices, and the establishment of colonial administrations."]
+},
+{
+    "tag": "BamumKingdom",
+    "patterns": ["What is the significance of the Bamum Kingdom in Cameroon's history?"],
+    "responses": ["The Bamum Kingdom was a major political and cultural center in Cameroon's history, with a rich artistic and intellectual tradition that continues to influence the country today."]
+},
+{
+    "tag": "CameroonGeographyResources",
+    "patterns": ["How did Cameroon's geography and natural resources impact its history?"],
+    "responses": ["Cameroon's geography and natural resources have played a significant role in its history, with factors such as trade routes, agricultural practices, and resource extraction shaping the country's development."]
+},
+{
+    "tag": "CameroonColonizationCulture",
+    "patterns": ["What was the impact of European colonization on Cameroon's traditional cultures and societies?"],
+    "responses": ["European colonization had a significant impact on Cameroon's traditional cultures and societies, leading to the erosion of many cultural practices and the imposition of new social norms."]
+},
+{
+    "tag": "CameroonBilingualism",
+    "patterns": ["How did Cameroon become a bilingual country with both French and English as official languages?"],
+    "responses": ["Cameroon became a bilingual country through a process of negotiation and compromise, with both French and English speakers advocating for their language to be recognized as an official language."]
+},
+{
+    "tag": "CameroonReligion",
+    "patterns": ["What was the role of religion in Cameroon's history?"],
+    "responses": ["Religion has played a significant role in Cameroon's history, with Christianity and Islam both having a strong presence in the country."]
+},
+{
+    "tag": "CameroonSocialMovements",
+    "patterns": ["What were the major social and cultural movements in Cameroon's history?"],
+    "responses": ["Some of the major social and cultural movements in Cameroon's history have included anti-colonial resistance, women's rights activism, and labor organizing."]
+},
+{"tag": "CameroonNeighboringCountries",
+"patterns": ["How has Cameroon's relationship with neighboring countries influenced its history?"],
+"responses": ["Cameroon's relationship with neighboring countries has had a significant impact on its history, with factors such as trade, migration, and conflict shaping the country's development."]
+},
+{
+"tag": "CameroonWWII",
+"patterns": ["What was the impact of World War II on Cameroon's history?"],
+"responses": ["World War II had a significant impact on Cameroon's history, with the country being occupied by both Allied and Axis powers and experiencing significant social and economic disruption."]
+},
+{
+"tag": "GrassfieldsRegion",
+"patterns": ["What is the significance of the Grassfields region in Cameroon's history?"],
+"responses": ["The Grassfields region was a major center of political and cultural activity in Cameroon's history, with many kingdoms and societies existing in the area."]
+},
+{
+"tag": "CameroonDiversity",
+"patterns": ["How has Cameroon's history influenced its current ethnic and linguistic diversity?"],
+"responses": ["Cameroon's history has played a significant role in shaping its current ethnic and linguistic diversity, with factors such as colonization, migration, and intermarriage contributing to the country's cultural landscape."]
+},
+{
+"tag": "CameroonEconomicDevelopments",
+"patterns": ["What were the major economic developments in Cameroon's history?"],
+"responses": ["Some of the major economic developments in Cameroon's history have included the growth of agriculture, the exploitation of natural resources, and the development of trade networks."]
+},
+{
+"tag": "CameroonColdWar",
+"patterns": ["What was the impact of the Cold War on Cameroon's history?"],
+"responses": ["The Cold War had a significant impact on Cameroon's history, with the country becoming a battleground for ideological struggles between Western and Soviet-aligned powers."]
+},
+{
+"tag": "CameroonAfricanContinent",
+"patterns": ["How has Cameroon's history influenced its current position within the African continent?"],
+"responses": ["Cameroon's history has played a significant role in shaping its current position within the African continent, with factors such as regional alliances, economic development, and political leadership contributing to the country's influence."]
+},
+{
+"tag": "CameroonColonialismLegacy",
+"patterns": ["What is the legacy of colonialism in Cameroon's history?"],
+"responses": ["The legacy of colonialism in Cameroon's history is complex, with factors such as cultural erasure, economic exploitation, and political instability continuing to shape the country's development today."]
+}
+,{
+    "tag": "ComputerEngineering",
+    "patterns": ["What is computer engineering?", "Can you explain computer engineering?"],
+    "responses": ["Computer engineering is a field of study that combines principles from both computer science and electrical engineering to design and develop computer hardware and software."]
+},
+{
+    "tag": "SoftwareEngineering",
+    "patterns": ["What is software engineering?", "Can you explain software engineering?"],
+    "responses": ["Software engineering is a branch of computer science that involves the design, development, and maintenance of software using engineering principles and methods."]
+},
+{
+    "tag": "HardwareEngineering",
+    "patterns": ["What is hardware engineering?", "Can you explain hardware engineering?"],
+    "responses": ["Hardware engineering is a branch of electrical engineering that focuses on the design and development of computer hardware components, such as microprocessors, circuit boards, and memory systems."]
+},
+{
+    "tag": "ComputerNetworkEngineering",
+    "patterns": ["What is computer network engineering?", "Can you explain computer network engineering?"],
+    "responses": ["Computer network engineering is a field of study that focuses on the design, implementation, and maintenance of computer networks, including local area networks (LANs), wide area networks (WANs), and the internet."]
+},
+{
+    "tag": "DatabaseEngineering",
+    "patterns": ["What is database engineering?", "Can you explain database engineering?"],
+    "responses": ["Database engineering is a field of study that involves the design, development, and maintenance of databases, which are organized collections of data that can be accessed and managed using specialized software."]
+},
+{
+    "tag": "ArtificialIntelligenceEngineering",
+    "patterns": ["What is artificial intelligence engineering?", "Can you explain artificial intelligence engineering?"],
+    "responses": ["Artificial intelligence (AI) engineering is a field of study that focuses on the development of intelligent computer systems that can perform tasks that typically require human intelligence, such as natural language processing, image recognition, and decision-making."]
+},
+{
+    "tag": "CybersecurityEngineering",
+    "patterns": ["What is cybersecurity engineering?", "Can you explain cybersecurity engineering?"],
+    "responses": ["Cybersecurity engineering is a field of study that focuses on the protection of computer systems and networks from unauthorized access, theft, damage, or disruption."]
+},
+{
+    "tag": "ComputerGraphicsEngineering",
+    "patterns": ["What is computer graphics engineering?", "Can you explain computer graphics engineering?"],
+    "responses": ["Computer graphics engineering is a field of study that involves the design and development of computer-generated images and animations, which are used in a variety of applications, such as video games, movies, and virtual reality environments."]
+},
+{
+    "tag": "EmbeddedSystemsEngineering",
+    "patterns": ["What is embedded systems engineering?", "Can you explain embedded systems engineering?"],
+    "responses": ["Embedded systems engineering is a field of study that focuses on the design and development of computer systems that are integrated into other devices or products, such as cars, appliances, and medical equipment."]
+},
+{
+    "tag": "HumanComputerInteractionEngineering",
+    "patterns": ["What is human-computer interaction engineering?", "Can you explain human-computer interaction engineering?"],
+    "responses": ["Human-computer interaction (HCI) engineering is a field of study that focuses on the design and development of computer systems that are easy to use and interact with, taking into account the needs and abilities of human users."]
+},
+{
+    "tag": "MobileApplicationEngineering",
+    "patterns": ["What is mobile application engineering?", "Can you explain mobile application engineering?"],
+    "responses": ["Mobile application engineering is a field of study that focuses on the design and development of software applications that run on mobile devices, such as smartphones and tablets."]
+
+
+},
+{
+    "tag": "WebDevelopmentEngineering",
+    "patterns": ["What is web development engineering?", "Can you explain web development engineering?"],
+    "responses": ["Web development engineering is a field of study that focuses on the design and development of websites and web applications, which are accessed through the internet using web browsers."]
+},
+{
+    "tag": "CloudComputingEngineering",
+    "patterns": ["What is cloud computing engineering?", "Can you explain cloud computing engineering?"],
+    "responses": ["Cloud computing engineering is a field of study that focuses on the design and development of computer systems that provide on-demand access to shared computing resources, such as servers, storage, and applications, over the internet."]
+},
+{
+    "tag": "ComputerArchitectureEngineering",
+    "patterns": ["What is computer architecture engineering?", "Can you explain computer architecture engineering?"],
+    "responses": ["Computer architecture engineering is a field of study that focuses on the design and development of computer systems at the hardware level, including the organization and interconnection of components such as processors, memory, and input/output devices."]
+},
+{
+    "tag": "ComputerSystemsEngineering",
+    "patterns": ["What is computer systems engineering?", "Can you explain computer systems engineering?"],
+    "responses": ["Computer systems engineering is a field of study that focuses on the design and development of computer systems at the hardware and software levels, including the integration of different components and subsystems into a functional system."]
+},
+{
+    "tag": "VirtualRealityEngineering",
+    "patterns": ["What is virtual reality engineering?", "Can you explain virtual reality engineering?"],
+    "responses": ["Virtual reality engineering is a field of study that focuses on the design and development of computer-generated environments that simulate real-world experiences, which are accessed through specialized hardware and software."]
+},
+{
+    "tag": "RoboticsEngineering",
+    "patterns": ["What is robotics engineering?", "Can you explain robotics engineering?"],
+    "responses": ["Robotics engineering is a field of study that focuses on the design and development of robots, which are programmable machines that can perform tasks autonomously or under human control."]
+},
+{
+    "tag": "ComputerForensicsEngineering",
+    "patterns": ["What is computer forensics engineering?", "Can you explain computer forensics engineering?"],
+    "responses": ["Computer forensics engineering is a field of study that focuses on the investigation and analysis of digital evidence in order to support legal proceedings, such as criminal investigations or civil lawsuits."]
+},
+{
+    "tag": "ComputerScience",
+    "patterns": ["What is the difference between computer science and computer engineering?","computer science vs computer engineering"],
+    "responses": ["Computer science is focused on the theoretical foundations of computing, including algorithms, programming languages, and software development, while computer engineering is focused on the design and development of computer hardware and software systems."]
+},
+{
+    "tag": "JobOpportunities",
+    "patterns": ["What kind of job opportunities are available in computer engineering?"],
+    "responses": ["There are many job opportunities available in computer engineering, including roles such as software engineer, hardware engineer, network engineer, database administrator, cybersecurity analyst, artificial intelligence specialist, and many others."]
+},
+{
+    "tag": "AccountingDepartment",
+    "patterns": ["What is the accounting department at Yaounde International Business School?", "Can you tell me about the accounting department at Yaounde International Business School?"],
+    "responses": ["The accounting department at Yaounde International Business School offers courses in financial accounting, managerial accounting, auditing, taxation, and other related topics to prepare students for careers in accounting and finance."]
+},
+{
+    "tag": "MarketingDepartment",
+    "patterns": ["What is the marketing department at Yaounde International Business School?", "Can you tell me about the marketing department at Yaounde International Business School?"],
+    "responses": ["The marketing department at Yaounde International Business School offers courses in consumer behavior, marketing research, advertising, branding, and other related topics to prepare students for careers in marketing and sales."]
+},
+{
+    "tag": "ManagementDepartment",
+    "patterns": ["What is the management department at Yaounde International Business School?", "Can you tell me about the management department at Yaounde International Business School?"],
+    "responses": ["The management department at Yaounde International Business School offers courses in organizational behavior, human resource management, strategic management, operations management, and other related topics to prepare students for careers in management and leadership."]
+},
+{
+    "tag": "EntrepreneurshipDepartment",
+    "patterns": ["What is the entrepreneurship department at Yaounde International Business School?", "Can you tell me about the entrepreneurship department at Yaounde International Business School?"],
+    "responses": ["The entrepreneurship department at Yaounde International Business School offers courses in new venture creation, small business management, social entrepreneurship, innovation, and other related topics to prepare students for careers as entrepreneurs and business owners."]
+},
+{
+    "tag": "FinanceDepartment",
+    "patterns": ["What is the finance department at Yaounde International Business School?", "Can you tell me about the finance department at Yaounde International Business School?"],
+    "responses": ["The finance department at Yaounde International Business School offers courses in corporate finance, investments, financial markets, international finance, and other related topics to prepare students for careers in finance and investment banking."]
+},
+{
+    "tag": "InternationalBusinessDepartment",
+    "patterns": ["What is the international business department at Yaounde International Business School?", "Can you tell me about the international business department at Yaounde International Business School?"],
+    "responses": ["The international business department at Yaounde International Business School offers courses in global business strategy, international trade, cross-cultural management, international marketing, and other related topics to prepare students for careers in international business."]
+},
+{
+    "tag": "SupplyChainManagementDepartment",
+    "patterns": ["What is the supply chain management department at Yaounde International Business School?", "Can you tell me about the supply chain management department at Yaounde International Business School?"],
+    "responses": ["The supply chain management department at Yaounde International Business School offers courses in logistics, procurement, inventory management, supply chain strategy, and other related topics to prepare students for careers in supply chain management."]
+},
+{
+    "tag": "InformationTechnologyDepartment",
+    "patterns": ["What is the information technology department at Yaounde International Business School?", "Can you tell me about the information technology department at Yaounde International Business School?"],
+    "responses": ["The information technology department at Yaounde International Business School offers courses in computer programming, database management, network security, web development, and other related topics to prepare students for careers in information technology."]
+},
+{
+    "tag": "HospitalityManagementDepartment",
+    "patterns": ["What is the hospitality management department at Yaounde International Business School?", "Can you tell me about the hospitality management department at Yaounde International Business School?"],
+    "responses": ["The hospitality management department at Yaounde International Business School offers courses in hotel and restaurant management, event planning, tourism, customer service, and other related topics to prepare students for careers in the hospitality industry."]
+},
+{
+    "tag": "EconomicsDepartment",
+    "patterns": ["What is the economics department at Yaounde International Business School?", "Can you tell me about the economics department at Yaounde International Business School?"],
+    "responses": ["The economics department at Yaounde International Business School offers courses in microeconomics, macroeconomics, econometrics, international economics, and other related topics to prepare students for careers in economics and public policy."]
+},
+{
+    "tag": "HumanResourcesDepartment",
+    "patterns": ["What is the human resources department at Yaounde International Business School?", "Can you tell me about the human resources department at Yaounde International Business School?"],
+    "responses": ["The human resources department at Yaounde International Business School offers courses in talent management, employee relations, compensation and benefits, training and development, and other related topics to prepare students for careers in human resources management."]
+},
+{
+    "tag": "LawDepartment",
+    "patterns": ["What is the law department at Yaounde International Business School?", "Can you tell me about the law department at Yaounde International Business School?"],
+    "responses": ["The law department at Yaounde International Business School offers courses in business law, international law, intellectual property law, contract law, and other related topics to prepare students for careers in law and legal services."]
+},
+{
+    "tag": "CommunicationDepartment",
+    "patterns": ["What is the communication department at Yaounde International Business School?", "Can you tell me about the communication department at Yaounde International Business School?"],
+    "responses": ["The communication department at Yaounde International Business School offers courses in public relations, advertising, media management, journalism, and other related topics to prepare students for careers in communication and media."]
+},
+{
+    "tag": "ProjectManagementDepartment",
+    "patterns": ["What is the project management department at Yaounde International Business School?", "Can you tell me about the project management department at Yaounde International Business School?"],
+    "responses": ["The project management department at Yaounde International Business School offers courses in project planning, project execution, risk management, project evaluation, and other related topics to prepare students for careers in project management."]
+},
+{
+    "tag": "HealthcareManagementDepartment",
+    "patterns": ["What is the healthcare management department at Yaounde International Business School?", "Can you tell me about the healthcare management department at Yaounde International Business School?"],
+    "responses": ["The healthcare management department at Yaounde International Business School offers courses in healthcare administration, health policy, healthcare finance, healthcare marketing, and other related topics to prepare students for careers in healthcare management."]
+},
+{
+    "tag": "SportsManagementDepartment",
+    "patterns": ["What is the sports management department at Yaounde International Business School?", "Can you tell me about the sports management department at Yaounde International Business School?"],
+    "responses": ["The sports management department at Yaounde International Business School offers courses in sports marketing, sports law, event planning, facility management, and other related topics to prepare students for careers in sports management."]
+},
+{
+    "tag": "RealEstateManagementDepartment",
+    "patterns": ["What is the real estate management department at Yaounde International Business School?", "Can you tell me about the real estate management department at Yaounde International Business School?"],
+    "responses": ["The real estate management department at Yaounde International Business School offers courses in real estate finance, property management, real estate law, real estate marketing, and other related topics to prepare students for careers in real estate management."]
+},
+{
+    "tag": "OperationsManagementDepartment",
+    "patterns": ["What is the operations management department at Yaounde International Business School?", "Can you tell me about the operations management department at Yaounde International Business School?"],
+    "responses": ["The operations management department at Yaounde International Business School offers courses in supply chain management, logistics, quality control, project management, and other related topics to prepare students for careers in operations management."]
+},
+{
+    "tag": "EnvironmentalManagementDepartment",
+    "patterns": ["What is the environmental management department at Yaounde International Business School?", "Can you tell me about the environmental management department at Yaounde International Business School?"],
+    "responses": ["The environmental management department at Yaounde International Business School offers courses in environmental policy, sustainability, natural resource management, environmental economics, and other related topics to prepare students for careers in environmental management."]
+},
+{
+    "tag": "NonprofitManagementDepartment",
+    "patterns": ["What is the nonprofit management department at Yaounde International Business School?", "Can you tell me about the nonprofit management department at Yaounde International Business School?"],
+    "responses": ["The nonprofit management department at Yaounde International Business School offers courses in nonprofit finance, fundraising, grant writing, program evaluation, and other related topics to prepare students for careers in nonprofit management and social entrepreneurship."]
+}
+
+
+
+  ]}
